@@ -6,70 +6,80 @@
   <title>Travel Agent Website</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <!-- Navigation -->
-  <header>
+  <header class="main-header">
+    <div class="main-logo"></div>
+
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#packages">Our Package</a></li>
-        <li><a href="#contact">Call Us</a></li>
-      </ul>
+      <a href class="navbar" href="#">Home</a>
+      <a href class="navbar" href="#">Our Package</a>
+      <a href class="navbar" href="#">Call Us</a>
     </nav>
   </header>
 
-  <!-- Banner Section -->
-  <section id="home" class="banner">
-    <div class="banner-content">
-      <h1>Your Trusted Travel Agent's</h1>
-      <p>Your happiness is our happiness</p>
-    </div>
-    <div class="banner-image">
-      <img src="https://via.placeholder.com/350x250" alt="Travel Image">
-    </div>
-  </section>
+  <hr/>
 
-  <!-- Testimonial Section -->
-  <section id="testimonial" class="testimonial">
-    <blockquote>
-      "Liburan jadi menyenangkan bersama Travel Agentku."
-    </blockquote>
-    <p><strong>Florence Hughes</strong></p>
-    <p>Ibu Rumah Tangga, 28</p>
-  </section>
+  <main>
+    <header class="main-article-header">
+      <h1>Your Trusted Travel Agent</h1>
+      <h3>Your happiness is our happiness</h3>
+    </header>
 
-  <!-- Features Section -->
-  <section id="features">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li><strong>1.</strong> Your first feature, written in the form of a benefit statement.</li>
-      <li><strong>2.</strong> Your second feature, written in the form of a benefit statement.</li>
-      <li><strong>3.</strong> Your third feature, written in the form of a benefit statement.</li>
-    </ul>
-  </section>
+    <!-- Main Content -->
+     <article class="main-article">
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Sales akan menghubungi Anda 1x24 Jam setelah data kami terima.</p>
-    <form id="contactForm">
-      <label for="name">Your Name:</label>
-      <input type="text" id="name" name="name" placeholder="First and last name" required>
+      <!-- Content Banner Auto Slide -->
+       <section class="container-banner">
+        <div class="banner-autoslide"></div>
+        <div class="banner-autoslide image1"></div>
+        <div class="banner-autoslide image2"></div>
+        <div class="banner-autoslide image3"></div>
 
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
-      <label for="interest">What are you interested in?</label>
-      <select id="interest" name="interest" required>
-        <option value="" disabled selected>Select option</option>
-        <option value="adventure">Adventure</option>
-        <option value="leisure">Leisure</option>
-        <option value="business">Business</option>
-      </select>
+        <p>Jadikan perjalanan Anda menjadi pengalaman terbaik bersama kami.</p>
+       </section>
 
-      <button type="submit">SEND</button>
-    </form>
-  </section>
+       <!-- Form Contact Us -->
+       <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Sales akan menghubungi Anda 1x24 Jam setelah data kami terima.</p>
+        <form id="contactform">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="First and last name" required>
+    
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    
+          <label for="interest">What are you interested in?</label>
+          <select id="interest" name="interest" required>
+            <option value="" disabled selected>Select option</option>
+            <option value="adventure">Adventure</option>
+            <option value="leisure">Leisure</option>
+            <option value="business">Business</option>
+          </select>
+    
+          <button type="submit">SUBMIT</button>
+        </form>
+      </section>
+     </article>
+
+     <!-- Content Our Package -->
+
+     <article>
+      <header class="our-package-header">
+        <h2>Our Package</h2>
+      </header>
+
+      <section class="our-package-content">
+        <h2>Content Our Package</h2>
+      </section>
+     </article>
+  </main>
+
+  <footer>
+    <span>Made By Angga Rizky</span>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
